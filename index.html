@@ -126,11 +126,48 @@
             color: #e6b91e;
         }
 
+        /* Schermate nascoste inizialmente */
         .form-screen, .choice-screen, .thank-you-screen {
             display: none;
         }
 
+        /* --- STILE INPUT FORM AGGIUNTO --- */
+        .input-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            color: #e6b91e;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid rgba(230, 185, 30, 0.4);
+            background: rgba(10, 25, 47, 0.8);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .input-field:focus {
+            border-color: #e6b91e;
+        }
+
+        /* Bottoni */
         .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
             margin-top: 12px;
         }
 
@@ -157,10 +194,23 @@
             background: #fcd43d;
         }
 
+        /* --- STILE BOTTONE DECLINE AGGIUNTO --- */
+        .btn-decline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-decline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            box-shadow: none;
+        }
+
         #hidden_iframe {
             display: none;
         }
-	</style>
+    </style>
 
 </head>
 <body>
